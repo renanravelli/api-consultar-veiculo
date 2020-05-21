@@ -10,4 +10,4 @@ app.get('/veiculo/:placa', (req, res) => {
         .catch(() => res.send('Ocorreu um erro ao consultar o veículo.'))
 })
 
-app.listen(3000, () => console.log('Serviço disponível'));
+app.listen(process.env.PORT || 3000, () => console.log('Serviço disponível'));
